@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>注册页面</title>
+    <link rel="icon" href="../img/1117.png_860.png">
+    <style>
+        body {
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: url(../img/1\ \(7\).png) no-repeat center 0px;
+            background-size: cover;
+            background-position: center 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -ms-background-size: cover;
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: black;
+            background: #f5f6f7;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input:hover {
+            background-color: skyblue;
+        }
+
+        input:visited {
+            color: aliceblue;
+        }
+
+        form {
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 80px;
+            width: 600px;
+            height: 700px;
+            background: rgba(0, 0, 0, .5);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+            border-radius: 10px;
+        }
+
+        /* 添加一些基本的样式 */
+        .form-control {
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .form-control:hover {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: #2e7fa4;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>注册</h1>
+        <label for="username">用户名:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">密码:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="confirmPassword">确认密码:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+        <label for="gender">性别:</label><br>
+        <input type="radio" id="male" name="gender" value="male">男
+        <input type="radio" id="female" name="gender" value="female">女<br>
+        <label for="birthdate">出生日期:</label><br>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+        <label for="interests">个人兴趣:</label><br>
+        <input type="checkbox" id="interest1" name="interests" value="reading">吃饭
+        <input type="checkbox" id="interest2" name="interests" value="travel">旅游
+        <input type="checkbox" id="interest3" name="interests" value="music">音乐<br>
+        <label for="email">个人邮箱:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="bio" value="">个人简介:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br>
+        <button type="submit" onclick="confime()">提交<br>
+            <button type="reset">重置
+    </form>
+</body>
+<script>
+    function confime() {
+
+        window.open("../登录 copy.html")
+
+
+    }
+
+</script>
+
+</html>
